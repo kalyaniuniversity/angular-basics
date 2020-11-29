@@ -1,0 +1,15 @@
+.nav-option {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 12px 18px;
+  font-size: 1.3em;
+  color: gray;
+  letter-spacing: 1px;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.navbar {
+  margin-top: 18px;
+}
