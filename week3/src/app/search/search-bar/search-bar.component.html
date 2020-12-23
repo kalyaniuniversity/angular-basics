@@ -1,0 +1,17 @@
+<div class="w3-search">
+	<label for="search-input">Search Bar</label>
+	<input id="search-input"
+		   type="text"
+		   (keyup)="search($event)"
+		   (focusin)="showResult()"
+		   (focusout)="hideResult()"
+		   placeholder="enter search term"
+		   class="w3-search-input"/>
+	<div *ngIf="viewResult" class="w3-search-result">
+		<span *ngIf="result.length === 0">No Results Found</span>
+		<div *ngFor="let v of result; let i = index;" class="w3-search-result-item">
+			<div>{{ v.name }}</div>
+			<div>{{ v.dept }}</div>
+		</div>
+	</div>
+</div>

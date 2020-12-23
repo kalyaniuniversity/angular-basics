@@ -1,0 +1,28 @@
+.w3-search {
+	position: relative;
+	margin: 10% 10%;
+	/*transform: translate(-50%, -50%);*/
+}
+
+.w3-search-input {
+	display: block;
+	margin-top: 12px;
+	font-size: 2em;
+}
+
+.w3-search-result {
+	position: absolute;
+	top: 100%;
+	margin-top: 8px;
+	font-size: 2em;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+.w3-search-result-item {
+	display: block;
+	border: 1px solid red;
+	margin: 3px;
+	padding: 3px;
+}
