@@ -1,0 +1,10 @@
+<div class="w4-child-component">
+	<p>child-component works!</p>
+	<span>Child Name from Parent: {{ childName | uppercase }}</span><br/>
+	<span>Child count value: {{ childCount }}</span><br/>
+	<span>The price of this item is: {{ price | currency: 'USD' }}</span><br/>
+	<div>
+		<button (click)="incrementCount()">Increment Count From Child</button>
+		<button (click)="decrementCount()">Decrement Count From Child</button>
+	</div>
+</div>

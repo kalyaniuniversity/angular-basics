@@ -1,0 +1,7 @@
+<div class="w4-parent-component">
+	<p>parent-component works!</p>
+	<p>Parent Count Value: {{ parentCount }}</p>
+	<button (click)="incrementCount()">Increment Count From Parent</button>
+	<button (click)="decrementCount()">Decrement Count From Parent</button>
+	<app-child-component [childName]="name" [childCount]="count" (countEvent)="updateParentCount($event)"></app-child-component>
+</div>
