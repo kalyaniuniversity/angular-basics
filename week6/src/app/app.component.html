@@ -1,0 +1,24 @@
+<div fxLayout.xs="column-reverse"
+     fxLayout.sm="column-reverse"
+     fxLayout.md="row wrap"
+     fxLayout.lg="row"
+     fxLayout.xl="row"
+     fxLayoutAlign.xs="start stretch"
+     fxLayoutAlign.sm="start stretch"
+     fxLayoutAlign.md="space-around center"
+     fxLayoutAlign.lg="space-around center"
+     fxLayoutAlign.xl="space-around center"
+     class="test-border-2">
+  <span fxFlex.xs="10"
+        fxFlex.sm="100"
+        fxFlex.md="50"
+        fxFlex.lg="20"
+        fxFlex.xl="10"
+        class="test-border">npm</span>
+  <div fxFlex="70" fxLayout="row" fxLayoutAlign="center center" class="test-border">
+    <input placeholder="search" fxFlex="80" />
+    <button fxFlex="20">search</button>
+  </div>
+  <button fxFlex="10" *ngIf="!isExisting" class="test-border">sign up</button>
+  <button fxFlex="10" *ngIf="isExisting" class="test-border">sign in</button>
+</div>
